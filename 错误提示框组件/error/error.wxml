@@ -1,0 +1,10 @@
+<!--component/error/error.wxml-->
+<view class='body'>
+   <view class='top'>
+       <view class='toper'>
+        <view class='title'>提示</view>
+        <view class='text'>{{errstr}}</view>
+       </view>
+       <button bindtap='{{bol==true?"jump":"clickbtn"}}'>确定</button>
+   </view>
+</view>
