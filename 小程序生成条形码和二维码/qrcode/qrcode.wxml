@@ -1,0 +1,14 @@
+  <view class='qr'>
+         <view class='bar'>
+           <canvas class='jsBarcode'  canvas-id='jsBarcode'></canvas>          
+         </view>
+
+         <view class='qrdigital'>995261067502879289</view>
+
+         <view class='qrcode'>
+           <canvas class='canvas' canvas-id='canvas'></canvas>
+         </view>
+
+         <view class='qrlegend'>会员付款码每分钟自动更新</view>
+
+  </view>

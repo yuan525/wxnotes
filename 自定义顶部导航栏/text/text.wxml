@@ -1,0 +1,28 @@
+<!-- 顶部导航栏 -->
+<view class='top'>
+  <view class='{{current==0?"selected":"unselected"}}' bindtap='switchs' data-item='0'>堂食券
+    <view class='selectedfott' hidden='{{current!=0}}'></view>
+  </view>
+  <view class='{{current==1?"selected":"unselected"}}' bindtap='switchs' data-item='1'>外卖券
+    <view class='selectedfott' hidden='{{current!=1}}'></view>
+  </view>
+  <view class='{{current==2?"selected":"unselected"}}' bindtap='switchs' data-item='2'>商城券
+    <view class='selectedfott' hidden='{{current!=2}}'></view>
+  </view>
+</view>
+
+<scroll-view scroll-y="true" style='height: calc(100% - 260rpx)'>
+<!-- 1 -->
+  <view wx:if="{{current==0}}">
+    <view>堂食券</view>
+  </view>
+<!-- 2 -->
+  <view wx:if="{{current==1}}">
+    <view>外卖券</view>
+  </view>
+<!-- 3 -->
+  <view wx:if="{{current==2}}">
+    <view>商城券</view>
+  </view>
+
+</scroll-view>
