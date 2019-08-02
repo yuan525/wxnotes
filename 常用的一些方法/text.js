@@ -2,6 +2,9 @@
 var jsonStr = JSON.stringify(json);//json对象------>json字符串
 var json = JSON.parse(jsonStr);//json字符串----->json对象
 
+//小程序接收路径参数会乱码需要用decodeURIComponent转码
+let src = decodeURIComponent(options.query.q)
+
 //2、文字图片水平对齐{ <view><image></image>这是图片</view> }
 vertical-align: middle;
 
